@@ -1,4 +1,4 @@
-# react-app-starter
-React Application Starter
+# expense-tracker-app
+Daily Expense Tracker
 
-React Application Starter helps to setup react aplication quickly.
+
