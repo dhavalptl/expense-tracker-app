@@ -1,0 +1,19 @@
+schema: "packages/expense-api/src/schema/*.ts"
+documents: "packages/expense-ui/src/queries/*.graphql.ts"
+generates:
+  packages/expense-api/src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+    config:
+      defaultMapper: any
+      contextType: ../#Context
+      useIndexSignature: true
+  packages/expense-ui/src/types/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withRefetchFn: true        

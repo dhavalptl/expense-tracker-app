@@ -1,0 +1,23 @@
+{
+  "name": "expense-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.18.2"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0"
+  },
+  "peerDependencies": {
+    "graphql": ">=15.3.0"
+  }
+}
